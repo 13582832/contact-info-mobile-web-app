@@ -36,7 +36,7 @@ function retrieveContacts(){
     const url = "contacts.json";
 
     xhr.onreadystatechange = function(){
-        if (xhr.readyState == 4){
+        if (xhr.readyState === 4){
             var contacts = JSON.parse(xhr.response).contacts;
         displayContacts(contacts);
 
