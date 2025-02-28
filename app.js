@@ -1,6 +1,6 @@
 function initialize(){
     let status = "*Offline*";
-    if(navigator.online){
+    if(navigator.onLine){
         status = "*Online*";
         retrieveContacts();
     }
